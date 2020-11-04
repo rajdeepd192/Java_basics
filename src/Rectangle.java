@@ -43,9 +43,6 @@ class Rectangle extends Shape
     {
         return 2*(width+length);
     }
-    public String toString()
-    {
-        return null;
-    }
+
 }
 

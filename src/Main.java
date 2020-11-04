@@ -2,7 +2,7 @@ public class Main
 {
     public static void main(String args[])
     {
-        Shape s1 = new Circle(5.5, "RED", false);
+        Shape s1 = new Circle(6.0, "RED", false);
 
         Circle c1 = (Circle)s1;
 		//System.out.println(c1);
@@ -14,10 +14,10 @@ public class Main
 		System.out.println(c1.getRadius());
 
 
-		Shape s3 = new Rectangle("Red", false, 5.0, 6.0);   // Upcast
+		Shape s2 = new Rectangle("Red", false, 5.0, 6.0);
 
 
-		Rectangle r1 = (Rectangle)s3;   // downcast
+		Rectangle r1 = (Rectangle)s2;
 		//System.out.println(r1);
 		System.out.println("Information about the rectangle: ");
 		System.out.println(r1.getArea());
