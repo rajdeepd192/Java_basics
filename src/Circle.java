@@ -25,12 +25,35 @@ class Circle extends Shape
     }
     public double getArea()
     {
-        double area=3.14*radius*radius;
-        return area;
+        try {
+            if (radius==0) {
+                throw new InvalidInputException();
+            } else {
+                double area = 3.14*radius*radius;
+                //System.out.println("Area is " +area);
+                return area;
+
+            }
+        } catch (InvalidInputException ex) {
+            System.out.println("Enter non zero inputs");
+        }
+
+        return 0;
     }
     public double getPerimeter()
     {
-        return (2*3.14*radius);
+        try {
+            if (radius== 0) {
+                throw new InvalidInputException();
+            } else {
+                double perimeter = 2 *3.14*radius;
+                //System.out.println("Perimeter is "+perimeter);
+                return perimeter;
+            }
+        } catch (InvalidInputException ex) {
+            System.out.println("Enter non zero inputs.");
+        }
+        return 0;
     }
 
 }
