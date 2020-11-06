@@ -20,14 +20,11 @@ public class Distinct
         {
             if(charCountMap.containsKey(c))
             {
-                //If char 'c' is present in charCountMap, incrementing it's count by 1
 
                 charCountMap.put(c, charCountMap.get(c)+1);
             }
             else
             {
-                //If char 'c' is not present in charCountMap,
-                //putting 'c' into charCountMap with 1 as it's value
 
                 charCountMap.put(c, 1);
             }
